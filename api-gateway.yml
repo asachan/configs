@@ -19,7 +19,7 @@ zuul:
   routes:
     user-webservice: /api/user/**
     task-webservice: /api/task/**
-    player-webserivce:/api/player/**
+    player-webserivce: /api/player/**
     web-portal: /**
     user: 
       path: /api/loggedinuser/**
