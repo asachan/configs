@@ -18,6 +18,17 @@ spring:
     resource: 
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
       preferTokenInfo: false 
+  datasource:
+    url: jdbc:mysql://localhost:3306/player-details
+    username: root
+    password: root
+    driver-class: com.mysql.jdbc.Driver
+  
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: create
 
 ---
 # user-webservice instance when used on Docker
