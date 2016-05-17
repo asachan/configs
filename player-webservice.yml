@@ -18,6 +18,10 @@ spring:
     resource: 
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
       preferTokenInfo: false 
+    client:
+      clientId: admin_client
+      clientSecret: test123
+      
   datasource:
     url: jdbc:mysql://localhost:3306/player-details
     username: root
